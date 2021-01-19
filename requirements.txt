@@ -1,0 +1,2 @@
+flickrapi==2.4.0
+tinydb==4.3.0
