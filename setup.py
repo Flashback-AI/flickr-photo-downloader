@@ -26,7 +26,7 @@ if __name__ == "__main__":
         packages=find_packages(),  # Chose the same as "name"
         scripts=["scripts/flickr-photo-downloader-cli"],
         license='MIT',  # Chose a license from here: https://help.github.com/articles/licensing-a-repository
-        description='a flickr photo downloader',  # Give a short description about your library
+        description='A small utility that helps download Flickr Photo Sets / Albums & Photos in Bulk',  # Give a short description about your library
         long_description=long_description,
         long_description_content_type="text/markdown",
         author='Justin Kruger',  # Type in your name
