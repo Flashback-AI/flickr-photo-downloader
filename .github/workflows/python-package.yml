@@ -24,8 +24,10 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
         FPD_FLICKR_API_KEY: ${{ secrets.FLICKR_API_KEY }}
+        FPD_FLICKR_API_SECRET: ${{ secrets.FLICKR_API_SECRET }}
       env:
         FPD_FLICKR_API_KEY: ${{ secrets.FLICKR_API_KEY }}
+        FPD_FLICKR_API_SECRET: ${{ secrets.FLICKR_API_SECRET }}
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
