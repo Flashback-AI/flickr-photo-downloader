@@ -26,7 +26,7 @@ if __name__ == "__main__":
         packages=find_packages(),
         scripts=["scripts/flickr-photo-downloader-cli"],
         license='MIT',
-        description='A small utility that helps download Flickr Photo Sets / Albums & Photos in Bulk',
+        description='Small utility to helps download Flickr Photo Sets / Albums & Photos in Bulk',
         long_description=long_description,
         long_description_content_type="text/markdown",
         author='Justin Kruger',
