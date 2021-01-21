@@ -23,27 +23,25 @@ if __name__ == "__main__":
     setup(
         name=PACKAGE_NAME,
         version=VERSION,
-        packages=find_packages(),  # Chose the same as "name"
+        packages=find_packages(),
         scripts=["scripts/flickr-photo-downloader-cli"],
-        license='MIT',  # Chose a license from here: https://help.github.com/articles/licensing-a-repository
-        description='A small utility that helps download Flickr Photo Sets / Albums & Photos in Bulk',  # Give a short description about your library
+        license='MIT',
+        description='A small utility that helps download Flickr Photo Sets / Albums & Photos in Bulk',
         long_description=long_description,
         long_description_content_type="text/markdown",
-        author='Justin Kruger',  # Type in your name
-        author_email='jdavid.net@gmail.com',  # Type in your E-Mail
+        author='Justin Kruger',
+        author_email='jdavid.net@gmail.com',
         url='https://github.com/Flashback-AI/flickr-photo-downloader',
-        # Provide either the link to your github or to your website
         download_url='https://github.com/Flashback-AI/flickr-photo-downloader/archive/main.zip',
-        keywords=['python', 'photos', 'flickr'],  # Keywords that define your package best
+        keywords=['python', 'photos', 'flickr'],
         install_requires=parse_requirements("requirements.txt"),
         python_requires=">=3.7.0",
         classifiers=[
             'Development Status :: 3 - Alpha',
-            # Choose "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
-            'Intended Audience :: Developers',  # Define that your audience are developers
+            'Intended Audience :: Developers',
             'Topic :: Software Development :: Build Tools',
             'License :: OSI Approved :: MIT License',
-            'Programming Language :: Python :: 3',  # Specify which python versions that you want to support
+            'Programming Language :: Python :: 3',
             'Programming Language :: Python :: 3.7',
             'Programming Language :: Python :: 3.8',
             'Programming Language :: Python :: 3.9',
