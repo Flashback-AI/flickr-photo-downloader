@@ -1,9 +1,10 @@
 import os
 
-from config import config
-from config import ConfigurationSet
-from config import config_from_env
-from config import config_from_yaml
+from config import *
+# from config import config
+# from config import ConfigurationSet
+# from config import config_from_env
+# from config import config_from_yaml
 # from config import config_from_dict
 
 default_path = "../.config/config.yaml"
