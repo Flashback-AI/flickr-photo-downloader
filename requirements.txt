@@ -1,2 +1,5 @@
+python-configuration>=0.8.1
 flickrapi==2.4.0
 tinydb==4.3.0
+setuptools~=49.2.1
+pytest~=6.2.1
