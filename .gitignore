@@ -115,6 +115,7 @@ venv.bak/
 
 #PyCharm
 .idea
+.pycrunch-config.yaml
 
 # Spyder project settings
 .spyderproject
