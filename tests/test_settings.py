@@ -11,6 +11,9 @@ def test_fix_path():
     assert script_path == rel_path, "fix_path is not resolving the correct path"
 
 
+# TODO: find a way to test if get_config works when .config-local/config.yaml is missing
+
+
 def test_get_config():
     """test function get_config"""
     cfg = settings.get_config()
