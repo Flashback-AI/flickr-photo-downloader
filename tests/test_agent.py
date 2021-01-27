@@ -1,5 +1,4 @@
 import pytest
-import photo_downloader
 
 
 def test_one_one():
