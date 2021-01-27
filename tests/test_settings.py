@@ -1,19 +1,21 @@
-import pytest
+"""tests for photo_downloader/settings.py"""
 import os
 
 from photo_downloader import settings
 
 
 def test_fix_path():
+    """test function fix_path"""
     rel_path = settings.fix_path("../tests/test_settings.py")
     script_path = os.path.normpath(__file__)
-    print(rel_path, script_path)
     assert script_path == rel_path, "fix_path is not resolving the correct path"
 
 
-def test_get_config():
-    print("test_get_config")
+# TODO: find a way to test if get_config works when .config-local/config.yaml is missing
 
+
+def test_get_config():
+    """test function get_config"""
     cfg = settings.get_config()
     assert cfg
 

@@ -1,5 +1,5 @@
-import flickrapi as fapi
-import tinydb
+"""pseudo code"""
+# import flickrapi as fapi
+# import tinydb
 
-import settings
-
+# import settings

@@ -1,11 +1,11 @@
-import pytest
-import photo_downloader
+"""tests for photo_downloader/agent.py"""
 
 
 def test_one_one():
-    assert 1 == 1
-    pass
+    """placeholder test function"""
+    assert ((1 - 1) + 1) == 1
 
 
 def test_two_two():
-    assert 2 == 2
+    """placeholder test function"""
+    assert ((2 - 1) + 1) == 2
