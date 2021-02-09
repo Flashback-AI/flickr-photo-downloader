@@ -1,3 +1,7 @@
 flickr:
     api_key: default
     api_secret: default
+photos:
+    path:
+tinydb:
+    path:

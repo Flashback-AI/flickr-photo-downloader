@@ -1,10 +1,16 @@
-"""settings.py"""
+"""
+settings.py
+a singleton pattern to load and merge settings from a default config, local config, and env
+@TODO load settings from the command line arguments too
+"""
 import os
 
 from config import ConfigurationSet, config_from_env, config_from_yaml
 
 DEFAULT_PATH = "../.config/config.yaml"
 LOCAL_PATH = "../.config-local/config.yaml"
+
+_cfg = {}
 
 
 def fix_path(file_path):
@@ -13,7 +19,7 @@ def fix_path(file_path):
     return os.path.normpath(os.path.join(script_path, file_path))
 
 
-def get_config():
+def _load_config():
     """returns the computed deep merge of configurations, from env, yaml"""
     cfg = ConfigurationSet(
         config_from_yaml(fix_path(DEFAULT_PATH), read_from_file=True)
@@ -27,4 +33,12 @@ def get_config():
     cfg.update(config_from_env("FPD", "__", lowercase_keys=True))
 
     print(cfg)
+
     return cfg
+
+
+def get_config():
+    return _cfg
+
+
+_cfg = _load_config()
